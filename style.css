@@ -189,7 +189,113 @@ section one end
 }
 
 
+ /* Optional part start */
 
+
+ .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    padding: 20px 100px;
+    margin-right:120px;
+    margin-top: 130px;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background: url(arabpic/kak.jpg) no-repeat center;
+    background-size: cover; */
+    z-index: -1;
+    filter: blur(50px);
+}
+
+.conrainer-box{
+    /* max-width: 950px; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(36, 34, 34, 0.19);
+}
+.left{
+    height: 100%;
+    background: url(images/drone.png) no-repeat center;
+    background-size: cover;
+}
+
+.right{
+    padding: 25px 40px;
+}
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        outline: none;
+        border: 2px solid rgba(0,0,0,0);
+        background-color: rgba(230,230,230,0.6);
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+        transition: .5s;
+
+}
+
+.field:hover{ 
+    background-color: rgba(216, 212, 212, 0.904);
+}
+
+.field:focus{
+    background-color: rgba(255, 255, 255, 0.959);
+    border: 2px solid rgba(120, 231, 222, 0.47);
+}
+
+.area{
+    min-height: 150px;
+}
+
+.btn{
+
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #2ecc71;
+    outline: none;
+    border: none;
+    transition: .5s;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #12b656;
+}
+
+
+
+ /* Optional part end  */
 
 
 
@@ -228,4 +334,19 @@ footer{
     padding: 5px;
     color: #120E43;
     
+}
+
+
+
+/* ------------------------
+all media query style here
+---------------------------*/
+
+@media screen and (max-width:880px){
+    .conrainer-box{
+        grid-template-columns: 1fr;
+    }
+    .left{ 
+        height: 200px;
+    }
 }
