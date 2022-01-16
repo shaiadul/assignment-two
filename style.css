@@ -414,3 +414,59 @@ all media query style here
 
 /* only optional section responsive */
 
+
+
+
+/* -----------------------------
+tab view responsive website start
+------------------------------ */
+    @media screen and (max-width:992px){
+
+        .nav-part{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+            text-align: center;
+        } 
+        .nav-icon {
+            display: none;
+        }
+        .name{
+            display: none;
+            padding-top: 50px;
+        }
+
+        .header-section{
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .camera-img{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .camera-info{
+            width: 70%;
+        }
+        .products{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .conrainer-box{
+            margin: 0px;
+            width: 100%;
+        }
+
+
+    }
+/* -----------------------------
+tab view responsive website end
+------------------------------ */
