@@ -391,6 +391,9 @@ all media query style here
         justify-content: center;
        
     }
+    .footer-style{
+        margin: 0px;
+    }
 
 }
 
@@ -398,23 +401,16 @@ all media query style here
 /* only optional section responsive */
 @media screen and (max-width:880px){
     .conrainer-box{
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
+        grid-template-columns: 1fr;
         width: 100%;
-        align-items: center;
-        text-align: center;
-        margin: 0px;
+        margin-right: 100px;
+
     }
     .left{ 
         height: 200px;
     }
-    .conrainer-box{
-        align-items: center;
-        text-align: center;
-        padding: 0px;
-        margin-right: 100px;
-        width: 100%;
-    }
+   
 }
+
 /* only optional section responsive */
 
