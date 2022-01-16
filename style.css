@@ -115,6 +115,10 @@ section one end
 
 
 
+
+
+
+
 /*section two start*/
 .latest-collection{
     text-align: center;
@@ -185,13 +189,13 @@ section one end
 }
 #see-more p:hover {
     color: #120E43;
-   
 }
 
 
+
+
+
  /* Optional part start */
-
-
  .container{
     position: relative;
     display: flex;
@@ -215,7 +219,6 @@ section one end
     z-index: -1;
     filter: blur(50px);
 }
-
 .conrainer-box{
     /* max-width: 950px; */
     display: grid;
@@ -231,7 +234,6 @@ section one end
     background: url(images/drone.png) no-repeat center;
     background-size: cover;
 }
-
 .right{
     padding: 25px 40px;
 }
@@ -251,7 +253,6 @@ h2::after{
     border-radius: 2px;
     background-color: #2ecc71;
 }
-
 .field{
         width: 100%;
         padding: 0.5rem 1rem;
@@ -261,22 +262,17 @@ h2::after{
         font-size: 1.1rem;
         margin-bottom: 22px;
         transition: .5s;
-
 }
-
 .field:hover{ 
     background-color: rgba(216, 212, 212, 0.904);
 }
-
 .field:focus{
     background-color: rgba(255, 255, 255, 0.959);
     border: 2px solid rgba(120, 231, 222, 0.47);
 }
-
 .area{
     min-height: 150px;
 }
-
 .btn{
 
     width: 100%;
@@ -288,14 +284,10 @@ h2::after{
     transition: .5s;
     color: #fff;
 }
-
 .btn:hover{
     background-color: #12b656;
 }
-
-
-
- /* Optional part end  */
+/* Optional part end  */
 
 
 
@@ -313,7 +305,6 @@ footer{
     /* justify-content: center;
     align-items: center; */
     text-align: center;
-  
 }
 #footer-name{
     font-weight: bold;
@@ -332,8 +323,7 @@ footer{
 .f-icon{
     font-size: 20px;
     padding: 5px;
-    color: #120E43;
-    
+    color: #120E43;   
 }
 
 
@@ -388,14 +378,15 @@ all media query style here
     .products{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-       
+        justify-content: center;      
     }
     .footer-style{
         margin: 0px;
     }
-
 }
+
+
+
 
 
 /* only optional section responsive */
@@ -408,11 +399,11 @@ all media query style here
     }
     .left{ 
         height: 200px;
-    }
-   
+    }  
 }
-
 /* only optional section responsive */
+
+
 
 
 
@@ -464,8 +455,6 @@ tab view responsive website start
             margin: 0px;
             width: 100%;
         }
-
-
     }
 /* -----------------------------
 tab view responsive website end
