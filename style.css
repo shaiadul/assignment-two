@@ -331,12 +331,7 @@ footer{
 /* ------------------------
 all media query style here
 ---------------------------*/
-
-@media screen and (max-width:688px){
-    
-    .name{
-        width: 100%;
-    }
+@media only screen and (max-width:688px){
     .nav-part{
         display: flex;
         flex-direction: column;
@@ -346,51 +341,33 @@ all media query style here
         margin: 0px;
         padding: 0px;
         text-align: center;
-    }
-    .nav-link a{
+        text-align: center;
+    } 
+    .nav-icon {
         display: none;
     }
-    .nav-link .nav-icon{
-    align-items: center;
-    justify-content: center;
+    .nav-link{
+        display: none;
     }
-
+    .name{
+       
+        padding-top: 50px;
+    }
     .header-section{
+            
         grid-template-columns: repeat(1, 1fr);
-        width: 40%;
+        width: 100%;
         justify-content: center;
         align-items: center;
-    }
-    .camera-img img{
-        width: 300px;
-        height: 400px;
-        
-    }
-    .camera-info{
-        width: 100%;
-        text-align: center;              
-    }
-    .camera-info-p{
         text-align: center;
-        padding: 50px;
+        width: 50%;
     }
-
     .products{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        justify-content: center;      
+        justify-content: center;
+        width: 100%;
     }
-    .footer-style{
-        margin: 0px;
-    }
-}
-
-
-
-
-
-/* only optional section responsive */
-@media screen and (max-width:880px){
     .conrainer-box{
         grid-template-columns: 1fr;
         width: 100%;
@@ -399,8 +376,13 @@ all media query style here
     }
     .left{ 
         height: 200px;
-    }  
+    }
 }
+
+
+
+/* only optional section responsive */
+
 /* only optional section responsive */
 
 
@@ -411,7 +393,7 @@ all media query style here
 /* -----------------------------
 tab view responsive website start
 ------------------------------ */
-    @media screen and (max-width:992px){
+@media only screen and (min-width: 688px) and (max-width:992px){
 
         .nav-part{
             display: flex;
@@ -433,6 +415,7 @@ tab view responsive website start
         }
 
         .header-section{
+
             grid-template-columns: repeat(1, 1fr);
             width: 100%;
             justify-content: center;
@@ -450,11 +433,29 @@ tab view responsive website start
         }
         .products{
             grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
         }
         .conrainer-box{
             margin: 0px;
             width: 100%;
         }
+        footer{
+            width: 100%;
+        }
+        .header-section{
+            grid-template-columns: repeat(1, 1fr);
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .camera-img{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
     }
 /* -----------------------------
 tab view responsive website end
